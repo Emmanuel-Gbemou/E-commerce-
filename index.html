@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premier exercice avec JQUERY</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="main">
+        <h2>E-commerce pour les vetements</h2>
+        <form action="" id="form">
+           <div class="form-group">
+                <label for="">Quantité</label>
+                <input type="number" id="quantite" value="10" >
+           </div>
+           <div class="form-group">
+                <label for="">Taille</label>
+                <select name="taille" id="taille">
+                    <option value="XL">XL</option>
+                    <option value="XXL">XXL</option>
+                    <option value="L">L</option>
+                    <option value="M">M</option>
+                    <option value="S">S</option>
+
+                </select>
+           </div>
+           <div class="form-group">
+                <label for="">Nombre:</label>
+                <input type="number" id="nombre"  value="1">
+            </div>
+            <div class="form-group">
+                <label for="">Prix:</label>
+                <input type="number" id="prix"  value="150" >
+            </div>
+        </form>
+
+        <section>
+            <div class="block-image">
+                <img src="img/1.jpg" alt="" width="300" height="300">
+            </div>
+            <div class="block-informaton">
+               <h3>Détail du proguit: </h3>
+                <div class="resultat">
+                    <span>Quantite:</span> : <span id="quantite_value"></span>
+                </div>
+                <div class="resultat">
+                    <span>Taille:</span> : <span id="taille_value"></span>
+                </div>
+                <div class="resultat">
+                    <span>Nombre:</span> : <span id="nombre_value"></span>
+                </div>
+                <div class="resultat">
+                    <span>Prix:</span> : <span id="prix_value"></span>
+                </div>
+                <div class="resultat">
+                    <span>Total:</span> : <span id="total_value"></span>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="form2">
+
+    </div>
+        <script src="./js/script.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+</body>
+</html>
